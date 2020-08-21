@@ -1,14 +1,19 @@
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
+body {
+  margin: 0; }
 
-nav li {
-  float: left; }
-
-nav li a {
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  color: plum; }
+nav {
+  width: 100vw;
+  background-color: blue;
+  overflow: hidden; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  nav li {
+    float: left; }
+  nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: plum; }

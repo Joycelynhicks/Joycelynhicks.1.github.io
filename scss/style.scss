@@ -1,5 +1,11 @@
+body {
+    margin: 0;
+}
+
 nav {
-        
+    width: 100vw;
+    background-color: blue; 
+    overflow: hidden;  
 
     ul {
         margin: 0;
@@ -10,6 +16,7 @@ nav {
     li {
         float: left;
     }
+
     li a {
         display: block;
         text-align: center;
@@ -18,3 +25,9 @@ nav {
         color: plum;
     }
 }
+
+
+
+
+
+
