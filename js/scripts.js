@@ -1,17 +1,36 @@
-$(document).ready(function(){
-    //$("#result_msg").hide();
-    //$("#button").click(function(e) {
-        //$('.container').addclass('anim')
-        //$('#result_msg').fadeIn(1500)
-        //e.preventDefault ();
-       // searchingstring = $('#searchingfield'.value();
-       // $('.results *').fadeOut(300, function () $(this).remove();
+$(document).ready(function() {
+    var $input = $('.search');
+   var $submit = $('.submit');
+   var apiKey = 'lR1UUS4tJNxsOi7rD9s7EJuiVS2hEINo';
+   
+   
+ 
+   $submit.on('click', function (event) {
+       event.preventDefault();
+       var inputVal = $input.val();
+       getGiphys(inputVal);
+   });
 
-    //$.getJSON(
-   //     {
-        //    (url:'api.giphy.com/v1/gifs/search?api_key=lR1UUS4tJNxsOi7rD9s7EJuiVS2hEINo');
-     //   }
-  //  )
+   function getGiphys(inputVal) {
+    $.get('https://api.giphy.com/v1/gifs/search?q=' + inputVal + '&api_key=' + apiKey + '&limit=5')
+        .done(function (data) {
+            for(var i = 0; i < 5; i++) {
+                var gifImg = data.data[i].images.downsized.url;
+                createBox(gifImg);
+            }
+        });
 
-  //  }
+
+   };
+
+function createBox(gifImg) {
+    var $newImg = $('<img>');
+    $newImg.attr('src', gifImg);
+
+    $('.img-container').append($newImg);
+
+
+}
+  
+
 });
