@@ -12,9 +12,9 @@ $(document).ready(function() {
    });
 
    function getGiphys(inputVal) {
-    $.get('https://api.giphy.com/v1/gifs/search?q=' + inputVal + '&api_key=' + apiKey + '&limit=5')
+    $.get('https://api.giphy.com/v1/gifs/search?q=' + inputVal + '&api_key=' + apiKey + '&limit=6')
         .done(function (data) {
-            for(var i = 0; i < 5; i++) {
+            for(var i = 0; i < 6; i++) {
                 var gifImg = data.data[i].images.downsized.url;
                 createBox(gifImg);
             }
