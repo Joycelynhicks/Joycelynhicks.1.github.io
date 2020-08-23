@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: 'Baloo Tamma 2', cursive;
-  font-weight: 4rem; }
+  font-weight: 4rem;
+  background-color: #99CED3; }
 
 nav {
   background-color: #5F6366;
@@ -60,7 +61,9 @@ div img {
   ul {
     display: flex;
     flex-direction: column;
-    line-height: 0em;
-    padding: 0;
-    margin: 1em;
-    justify-content: flex-start; } }
+    line-height: 0em; }
+  li {
+    margin: 0;
+    padding: 0; }
+  h1 {
+    margin-top: 0; } }
