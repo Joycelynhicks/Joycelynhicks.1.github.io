@@ -5,6 +5,26 @@
     font-weight: 4rem;
 }
 
+@mixin grey {
+    color: #5F6366;
+}
+
+@mixin navyBlue {
+    color: #4D6D9A;
+}
+
+@mixin purple {
+    color: #86B3D1;
+}
+
+@mixin lightBlue {
+   color: #99CED3; 
+}
+
+@mixin pink {
+    color: #EDB5BF;
+}
+
 
 //Page Styling
 
