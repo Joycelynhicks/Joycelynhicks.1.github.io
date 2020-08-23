@@ -24,6 +24,9 @@ nav {
   height: 3em;
   padding-top: 1em; }
 
+h1 {
+  border: 3px solid red; }
+
 .search {
   width: 50%; }
 
