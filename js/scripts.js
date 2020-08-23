@@ -10,7 +10,7 @@ $(document).ready(function() {
        $('.img-container').empty();
        var inputVal = $input.val();
        getGiphys(inputVal);
-       $input.val('Search');
+       $input.val('');
    });
 
    function getGiphys(inputVal) {
