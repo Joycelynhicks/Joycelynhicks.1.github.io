@@ -7,6 +7,7 @@ $(document).ready(function() {
  
    $submit.on('click', function (event) {
        event.preventDefault();
+       $('.img-container').empty();
        var inputVal = $input.val();
        getGiphys(inputVal);
        $input.val('Search');
