@@ -4,8 +4,8 @@ body {
   font-weight: 4rem; }
 
 nav {
+  background-color: #5F6366;
   width: 100vw;
-  background-color: blue;
   overflow: hidden; }
   nav ul {
     margin: 0;

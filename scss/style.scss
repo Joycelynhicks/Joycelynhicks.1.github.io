@@ -6,7 +6,7 @@
 }
 
 @mixin grey {
-    color: #5F6366;
+    background-color: #5F6366;
 }
 
 @mixin navyBlue {
@@ -35,8 +35,8 @@ body {
 }
 
 nav {
-    width: 100vw;
-    background-color: blue; 
+    @include grey();
+    width: 100vw; 
     overflow: hidden;  
 
     ul {
