@@ -28,7 +28,11 @@ nav {
   padding-top: 1em; }
 
 h1 {
-  text-align: center; }
+  text-align: left;
+  display: flex;
+  margin-left: 40px;
+  font-size: 2rem;
+  color: #EDB5BF; }
 
 .search {
   width: 50%; }
