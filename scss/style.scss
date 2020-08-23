@@ -63,6 +63,7 @@ nav {
     justify-content: center;
     height: 3em;
     padding-top: 1em;
+    
 }
 
   h1 {
@@ -101,6 +102,7 @@ div img {
 
 @media only screen and (max-width: 800px) {
   
+
     div img {
       
        
@@ -116,6 +118,26 @@ div img {
     
 
 }
+
+@media only screen and (max-width: 320px) {
+  
+    ul  {
+        display: flex;
+        flex-direction: column;
+        line-height: 0em;
+        padding: 0;
+        margin: 1em;
+        justify-content: flex-start;
+        
+    }
+    
+    
+      
+    
+
+}
+  
+
   
 
 

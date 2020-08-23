@@ -55,3 +55,12 @@ div img {
     flex-direction: column;
     padding: 2em;
     margin: 2em; } }
+
+@media only screen and (max-width: 320px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    line-height: 0em;
+    padding: 0;
+    margin: 1em;
+    justify-content: flex-start; } }
