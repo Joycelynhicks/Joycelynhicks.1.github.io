@@ -1,5 +1,7 @@
 body {
-  margin: 0; }
+  margin: 0;
+  font-family: 'Baloo Tamma 2', cursive;
+  font-weight: 4rem; }
 
 nav {
   width: 100vw;

@@ -1,5 +1,17 @@
+//mixins
+
+@mixin bodyFont {
+    font-family: 'Baloo Tamma 2', cursive;
+    font-weight: 4rem;
+}
+
+
+//Page Styling
+
+
 body {
     margin: 0;
+    @include bodyFont();
 }
 
 nav {
