@@ -9,6 +9,7 @@ $(document).ready(function() {
        event.preventDefault();
        var inputVal = $input.val();
        getGiphys(inputVal);
+       $input.val('Search');
    });
 
    function getGiphys(inputVal) {
@@ -28,6 +29,7 @@ function createBox(gifImg) {
     $newImg.attr('src', gifImg);
 
     $('.img-container').append($newImg);
+    
 
 
 }
