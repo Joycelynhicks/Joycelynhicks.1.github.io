@@ -5,25 +5,16 @@
     font-weight: 4rem;
 }
 
-@mixin grey {
-    background-color: #5F6366;
-}
+    $grey: #5F6366;
 
-@mixin navyBlue {
-    color: #4D6D9A;
-}
+    $navyBlue: #4D6D9A;
 
-@mixin purple {
-    color: #86B3D1;
-}
+    $purple: #86B3D1;
 
-@mixin lightBlue {
-   color: #99CED3; 
-}
+   $lightBlue: #99CED3; 
 
-@mixin pink {
-    color: #EDB5BF;
-}
+    $pink: #EDB5BF;
+
 
 
 //Page Styling
@@ -32,7 +23,7 @@
 body {
     margin: 0;
     @include bodyFont();
-    background-color: #99CED3;
+    background-color: $lightBlue;
     
 }
 
@@ -75,6 +66,7 @@ nav {
 
 .search {
     width: 50%;
+    
 }
 
 .img-container {
