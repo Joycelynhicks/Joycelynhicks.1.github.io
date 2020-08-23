@@ -3,7 +3,7 @@ $(document).ready(function() {
    var $submit = $('.submit');
    var apiKey = 'lR1UUS4tJNxsOi7rD9s7EJuiVS2hEINo';
    
-   
+ //Submit Button  
  
    $submit.on('click', function (event) {
        event.preventDefault();
@@ -12,6 +12,8 @@ $(document).ready(function() {
        getGiphys(inputVal);
        $input.val('');
    });
+
+//Giphy API
 
    function getGiphys(inputVal) {
     $.get('https://api.giphy.com/v1/gifs/search?q=' + inputVal + '&api_key=' + apiKey + '&limit=6')
@@ -24,6 +26,8 @@ $(document).ready(function() {
 
 
    };
+
+//Appended images
 
 function createBox(gifImg) {
     var $newImg = $('<img>');
