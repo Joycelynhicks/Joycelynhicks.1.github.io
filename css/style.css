@@ -41,3 +41,11 @@ div img {
   width: 25%;
   padding: 2em;
   margin: 1em; }
+
+@media screen and (max-width: 320px) {
+  .img-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: flex-start; }
+  div img {
+    width: 100%; } }
