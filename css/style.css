@@ -7,7 +7,9 @@ body {
 nav {
   background-color: #5F6366;
   width: 100vw;
-  overflow: hidden; }
+  overflow: hidden;
+  line-height: 0em;
+  padding-top: 1em; }
   nav ul {
     margin: 0;
     padding: 0;
